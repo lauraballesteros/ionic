@@ -1,0 +1,37 @@
+<ion-header>
+<ion-navbar>
+  <ion-title>Room1</ion-title>
+</ion-navbar>
+</ion-header>
+
+  <ion-content padding >
+    <ion-row>
+<ion-col col-6>
+    <div class="content_img">
+        <img src="assets/icon/bath.png">
+        <h1>BAÑO</h1>
+      </div>
+</ion-col>
+<ion-col col-6>
+    <h2>{{temperatura}}</h2>
+</ion-col>
+    </ion-row>
+      
+      <ion-item>
+          <ion-range  min="20" max="80" step="10" snaps="true"  color="primary" pin="true" [(ngModel)]="temperatura" (ngModelChange)="rangeChanged(event)" >
+            <ion-icon  range-left name="thermometer"></ion-icon>
+          </ion-range>
+      </ion-item>
+      
+      <ion-row>
+        <ion-col col-6 padding >
+          <img src="assets/icon/climate.png" (click)="goClimate()" style="width: 140px; height: 140px; margin-top: 50px">
+        </ion-col>
+        <ion-col col-6>
+          <img src="assets/icon/plus.png" (click)="goActivity()" style="width: 100px; height: 100px;margin-top: 80px">
+        </ion-col>
+      </ion-row>
+        
+
+      
+  </ion-content>

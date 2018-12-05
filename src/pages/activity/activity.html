@@ -1,0 +1,56 @@
+<!--
+  Generated template for the ActivityPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Activity</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<!-- <button class="back" ion-button-large (click)="goBack()">Back</button> -->
+
+<ion-grid>
+  <div style="padding-top: 40px">
+   <div class="opc1">
+
+     <ion-row>
+       <ion-col col-6>
+         <img src="assets/icon/activity.png" style="width: 100px; height: 100px;">
+         <img src="assets/icon/time.png" style="width: 100px; height: 100px;">
+         <img src="assets/icon/auto.png" style="width: 100px; height: 100px;">
+       </ion-col>
+       <ion-col col-6>
+         <!-- <p class="opcLabel">Area en metros cuadrados</p> -->
+         <ion-row>
+          <select class="lista_des" name="actividades">
+            <option value="1">Siesta</option>
+            <option value="2">Lectura</option>
+            <option value="3">Pelicula</option>
+         </select>
+         </ion-row>
+         <ion-row>
+          <select class="lista_des2" name="tiempo">
+          <option value="1">10 minutos</option>
+          <option value="2">20 minutos</option>
+          <option value="2">30 minutos</option>
+        </select> 
+         </ion-row>
+         <ion-row>
+          <button ion-button type="submit" color=dark style="width: 150px;height: 50px; margin-top: 60px;">Automatico</button>
+         </ion-row>
+       </ion-col>
+   </ion-row>
+   </div>
+ </div>
+ </ion-grid>
+ //onclick-> iniciar actividad escogida
+ <img src="assets/icon/plus.png" style="width: 150px; height: 150px; margin-bottom: 20px; margin-top: 20px;">
+
+</ion-content>

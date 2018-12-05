@@ -1,0 +1,33 @@
+page-activity {
+    .content{
+        text-align: center;
+        background-color: #333333;
+    }
+    .content_img{
+        padding-top:50px;
+        padding-bottom:50px;
+    
+    }
+    .content_img img{
+        width: 200px;
+        height: 200px;
+        
+    }
+    .content_button button{
+        padding: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .lista_des{
+        margin-top: 30px;
+        width: 120px;
+        height: 40px;
+        background-color: "primary";
+    }
+    .lista_des2{
+        margin-top: 65px;
+        width: 120px;
+        height: 40px;
+        background-color: "primary";
+    }
+}
