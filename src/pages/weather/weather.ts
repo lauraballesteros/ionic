@@ -9,7 +9,9 @@ import { Observable } from 'rxjs/Observable'
   templateUrl: 'weather.html',
 })
 export class WeatherPage {
-  result: any;
+  nombre: any;
+  temp_actual;
+
   data: Observable<any>;
   constructor(public navCtrl: NavController, public navParams: NavParams, public http: HttpClient) {
     this.getData();
@@ -21,7 +23,8 @@ export class WeatherPage {
       console.log(data);
       console.log(data.name);
       console.log(data.main.temp);
-      this.result =data.name;
+      this.nombre =data.name;
+      this.temp_actual=data.main.temp;
     });
   }
 }
