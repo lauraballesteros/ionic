@@ -2,9 +2,24 @@ page-weather {
 h1{
     text-align: center;
     color: white;
+    font-size: 100px;
 }
 .content{
-    text-align: center;
+    // text-align: center;
     background-color: #333333;
+}
+h2{
+    color: wheat;
+    text-align: center;
+}
+.text_label h2{
+    color:#FF385C;
+    
+}
+.datos{
+    padding-top: 60px;
+}
+.all{
+    padding-top: 40px;
 }
 }

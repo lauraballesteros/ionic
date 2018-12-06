@@ -11,6 +11,11 @@ import { Observable } from 'rxjs/Observable'
 export class WeatherPage {
   nombre: any;
   temp_actual;
+  sunriseU;
+  sunriseG;
+  pressure;
+  clima:any=[];
+  current;
 
   data: Observable<any>;
   constructor(public navCtrl: NavController, public navParams: NavParams, public http: HttpClient) {
@@ -23,8 +28,14 @@ export class WeatherPage {
       console.log(data);
       console.log(data.name);
       console.log(data.main.temp);
+      console.log(data.weather["main"]);
       this.nombre =data.name;
       this.temp_actual=data.main.temp;
-    });
+      this.pressure=data.main.pressure;
+      this.sunriseU=data.sys.sunrise;
+      this.sunriseG=new Date(this.sunriseU*1000);
+      this.sunriseG=this.sunriseG.toGMTString()+this.sunriseU.toLocaleString();
+      this.current=data.weather["main"];
+        });
   }
 }
